@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Jeren">
+  <meta name="description" content="A growing collection of projects by Jeren.">
+  <meta name="theme-color" content="#fffaf7">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Jeren | Projects">
+  <meta property="og:description" content="A growing collection of projects by Jeren.">
+  <meta property="og:url" content="projects.html">
+  <meta property="og:image" content="assets/profile.jpg">
+  <meta property="og:site_name" content="Jeren's Personal Website">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Jeren | Projects | Software Engineering Student</title>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Jeren",
+      "description": "Software Engineering student at Huazhong University of Science and Technology in Wuhan.",
+      "affiliation": {
+        "@type": "CollegeOrUniversity",
+        "name": "Huazhong University of Science and Technology"
+      },
+      "homeLocation": {
+        "@type": "City",
+        "name": "Wuhan"
+      },
+      "knowsAbout": ["Frontend development", "JavaScript", "AI tools", "UI/UX", "Digital products"]
+    }
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <script type="module" src="three-background.js"></script>
+</head>
+<body class="projects-page">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="site-brand" href="index.html" aria-label="Jeren home">Jeren<span class="brand-dot">.</span></a>
+      <div class="header-actions">
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">Dark</button>
+        <div class="language-switcher" aria-label="Language"><button type="button" data-language="en" aria-pressed="true">EN</button><button type="button" data-language="zh" aria-pressed="false">中文</button></div>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      </div>
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a class="is-current" href="projects.html" aria-current="page">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero page-hero-projects">
+      <div class="container page-hero-content"><p class="eyebrow">Projects</p><h1>A workbench in progress.</h1></div>
+    </section>
+    <section class="section-pad">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">Selected work</p><h2>Built through study and practice.</h2></div><p>A selection of university systems and focused JavaScript projects, documented in public on GitHub.</p></div>
+
+        <div class="project-featured-grid">
+          <article class="project-card project-card-featured project-card-taskflow">
+            <div class="project-visual" aria-label="TaskFlow screenshot placeholder">TaskFlow / project view</div>
+            <div class="project-card-body">
+              <div class="project-card-heading"><span class="project-number">01</span><span class="project-status">In Progress / University Project</span></div>
+              <h3>TaskFlow</h3>
+              <p class="project-subtitle">Student Project Management Platform</p>
+              <p>A full-stack university project for authentication, project management, task management and a multilingual UI.</p>
+              <p class="project-tech"><strong>Tech</strong> Node.js, Express, TypeScript, SQLite, Vite, HTML/CSS</p>
+              <a class="button button-quiet project-link" href="https://github.com/jeren001/2026-Software-Engineering-Theory-and-Practice-Computer-Experiment-2" target="_blank" rel="noopener noreferrer">View on GitHub <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="project-card project-card-featured project-card-myblog">
+            <div class="project-visual" aria-label="MyBlog screenshot placeholder">MyBlog / quiet notes</div>
+            <div class="project-card-body">
+              <div class="project-card-heading"><span class="project-number">02</span></div>
+              <h3>MyBlog</h3>
+              <p class="project-subtitle">Quiet Notes Blog System</p>
+              <p>A blog system organized around article management, categories, comments and statistics.</p>
+              <p class="project-tech"><strong>Tech</strong> Node.js, Express, SQLite, EJS, MVC</p>
+              <a class="button button-quiet project-link" href="https://github.com/jeren001/MyBlog" target="_blank" rel="noopener noreferrer">View on GitHub <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
+
+        <div class="project-secondary-grid">
+          <article class="project-card project-card-secondary">
+            <div class="project-visual" aria-label="Passenger Counter screenshot placeholder">Passenger Counter / app view</div>
+            <div class="project-card-body"><div class="project-card-heading"><span class="project-number">03</span></div><h3>Passenger Counter</h3><p>A simple interactive counter application.</p><p class="project-tech"><strong>Tech</strong> HTML, CSS, JavaScript</p><a class="text-link project-link" href="https://github.com/jeren001/passenger-counter" target="_blank" rel="noopener noreferrer">View on GitHub <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card project-card-secondary">
+            <div class="project-visual" aria-label="Basketball Scoreboard screenshot placeholder">Basketball Scoreboard / game view</div>
+            <div class="project-card-body"><div class="project-card-heading"><span class="project-number">04</span></div><h3>Basketball Scoreboard</h3><p>An interactive basketball scoreboard.</p><p class="project-tech"><strong>Tech</strong> HTML, CSS, JavaScript</p><a class="text-link project-link" href="https://github.com/jeren001/scoreboard" target="_blank" rel="noopener noreferrer">View on GitHub <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card project-card-secondary">
+            <div class="project-visual" aria-label="Password Generator screenshot placeholder">Password Generator / tool view</div>
+            <div class="project-card-body"><div class="project-card-heading"><span class="project-number">05</span></div><h3>Password Generator</h3><p>An interactive password generation tool.</p><p class="project-tech"><strong>Tech</strong> HTML, CSS, JavaScript</p><a class="text-link project-link" href="https://github.com/jeren001/password-generator" target="_blank" rel="noopener noreferrer">View on GitHub <span aria-hidden="true">↗</span></a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><p>© <span data-year></span> Jeren</p><p>Wuhan, China</p></div></footer>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Jeren">
+  <meta name="description" content="Contact Jeren through a simple message form.">
+  <meta name="theme-color" content="#fffaf7">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Jeren | Contact">
+  <meta property="og:description" content="Contact Jeren through a simple message form.">
+  <meta property="og:url" content="contact.html">
+  <meta property="og:image" content="assets/profile.jpg">
+  <meta property="og:site_name" content="Jeren's Personal Website">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Jeren | Contact | Software Engineering Student</title>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Jeren",
+      "description": "Software Engineering student at Huazhong University of Science and Technology in Wuhan.",
+      "affiliation": {
+        "@type": "CollegeOrUniversity",
+        "name": "Huazhong University of Science and Technology"
+      },
+      "homeLocation": {
+        "@type": "City",
+        "name": "Wuhan"
+      },
+      "knowsAbout": ["Frontend development", "JavaScript", "AI tools", "UI/UX", "Digital products"]
+    }
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <script type="module" src="three-background.js"></script>
+</head>
+<body class="contact-page">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="site-brand" href="index.html" aria-label="Jeren home">Jeren<span class="brand-dot">.</span></a>
+      <div class="header-actions">
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">Dark</button>
+        <div class="language-switcher" aria-label="Language"><button type="button" data-language="en" aria-pressed="true">EN</button><button type="button" data-language="zh" aria-pressed="false">中文</button></div>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      </div>
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a><a href="about.html">About</a><a href="projects.html">Projects</a><a class="is-current" href="contact.html" aria-current="page">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero page-hero-contact"><div class="container page-hero-content"><p class="eyebrow">Contact</p><h1>Let’s start a conversation.</h1></div></section>
+    <section class="section-pad">
+      <div class="container contact-grid">
+        <div class="contact-intro"><p class="eyebrow">Say hello</p><h2>Have a thought to share?</h2><p>Use the form to leave a message. The contact details and submission service can be connected here when they are ready.</p></div>
+        <form class="contact-form" data-contact-form>
+          <label for="name">Name</label><input id="name" name="name" type="text" autocomplete="name" required>
+          <label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required>
+          <label for="message">Message</label><textarea id="message" name="message" rows="6" required></textarea>
+          <button class="button button-primary" type="submit">Send message <span aria-hidden="true">→</span></button>
+          <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><p>© <span data-year></span> Jeren</p><p>Wuhan, China</p></div></footer>
+</body>
+</html>

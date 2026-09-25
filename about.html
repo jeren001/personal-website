@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Jeren">
+  <meta name="description" content="Learn more about Jeren, a Software Engineering student at HUST in Wuhan.">
+  <meta name="theme-color" content="#fffaf7">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Jeren | About | Software Engineering Student">
+  <meta property="og:description" content="Learn more about Jeren, a Software Engineering student at HUST in Wuhan.">
+  <meta property="og:url" content="about.html">
+  <meta property="og:image" content="assets/profile.jpg">
+  <meta property="og:site_name" content="Jeren's Personal Website">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Jeren | About | Software Engineering Student</title>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Jeren",
+      "description": "Software Engineering student at Huazhong University of Science and Technology in Wuhan.",
+      "affiliation": {
+        "@type": "CollegeOrUniversity",
+        "name": "Huazhong University of Science and Technology"
+      },
+      "homeLocation": {
+        "@type": "City",
+        "name": "Wuhan"
+      },
+      "knowsAbout": ["Frontend development", "JavaScript", "AI tools", "UI/UX", "Digital products"]
+    }
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <script type="module" src="three-background.js"></script>
+</head>
+<body class="about-page">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="site-brand" href="index.html" aria-label="Jeren home">Jeren<span class="brand-dot">.</span></a>
+      <div class="header-actions">
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">Dark</button>
+        <div class="language-switcher" aria-label="Language"><button type="button" data-language="en" aria-pressed="true">EN</button><button type="button" data-language="zh" aria-pressed="false">中文</button></div>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      </div>
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a class="is-current" href="about.html" aria-current="page">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero page-hero-about about-intro" aria-labelledby="about-title">
+      <div class="container page-hero-content about-hero-content">
+        <p class="eyebrow">About Jeren</p>
+        <h1 id="about-title">A little more about me.</h1>
+        <p class="about-hero-copy">I’m an ambitious and social Software Engineering student interested in technology, frontend development, and creative projects that bring ideas to life.</p>
+        <a class="button button-primary" href="#journey">Explore my journey <span aria-hidden="true">↓</span></a>
+      </div>
+    </section>
+
+    <section class="about-section about-journey" id="journey" aria-labelledby="journey-title">
+      <div class="container about-narrow">
+        <div class="about-section-heading">
+          <p class="eyebrow">01 / My Journey</p>
+          <h2 id="journey-title">A path shaped by learning and movement.</h2>
+        </div>
+        <div class="journey-list">
+          <article class="journey-item">
+            <span class="journey-marker" aria-hidden="true">2023</span>
+            <div>
+              <p class="journey-period">2023</p>
+              <h3>Tongji University · Shanghai</h3>
+              <p>One-year language / pre-degree study period.</p>
+              <p class="journey-note">Received an Excellent certificate.</p>
+            </div>
+          </article>
+          <article class="journey-item journey-item-current">
+            <span class="journey-marker" aria-hidden="true">NOW</span>
+            <div>
+              <p class="journey-period">NOW</p>
+              <h3>Huazhong University of Science and Technology · HUST</h3>
+              <p>Software Engineering undergraduate in Wuhan.</p>
+            </div>
+          </article>
+          <article class="journey-item">
+            <span class="journey-marker journey-marker-wide" aria-hidden="true">NEXT</span>
+            <div>
+              <p class="journey-period">CURRENT DIRECTION</p>
+              <h3>Exploring what comes next</h3>
+              <p>Continuing to explore software engineering, frontend development, web technologies and practical software projects.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section about-profile" aria-labelledby="profile-title">
+      <div class="container about-profile-layout">
+        <div class="about-profile-image profile-image-fallback">
+          <img src="assets/profile.jpg" alt="Profile image of Jeren" loading="lazy" decoding="async" width="700" height="840" data-profile-image>
+          <div class="profile-placeholder" aria-hidden="true">Add your photo here</div>
+        </div>
+        <div class="about-profile-card">
+          <p class="eyebrow">02 / Profile Card</p>
+          <h2 id="profile-title">Jeren</h2>
+          <p class="profile-role">Software Engineering Undergraduate</p>
+          <p class="profile-location">HUST · Wuhan</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section about-me" aria-labelledby="about-me-title">
+      <div class="container about-split">
+        <div class="about-section-heading">
+          <p class="eyebrow">03 / About Me</p>
+          <h2 id="about-me-title">Learning by making things real.</h2>
+        </div>
+        <div class="about-reading-copy">
+          <p>I’m an ambitious and social person who enjoys communicating with people and learning from different perspectives. As a Software Engineering student at HUST, I’m building a foundation in technology while staying curious about where it can take me.</p>
+          <p>I’m especially interested in frontend development and visual UI design. I enjoy combining technology with creative ideas, exploring different directions within software engineering, and learning by building practical projects.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section about-skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="about-section-heading">
+          <p class="eyebrow">04 / Skills</p>
+          <h2 id="skills-title">A practical self-assessment.</h2>
+        </div>
+        <div class="skill-progress-list">
+          <div class="skill-progress-item">
+            <div class="skill-progress-heading"><h3>HTML / CSS</h3><strong>80%</strong></div>
+            <div class="skill-progress-track" role="progressbar" aria-label="HTML and CSS self-assessment" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"><span style="--skill-level: 80%"></span></div>
+          </div>
+          <div class="skill-progress-item">
+            <div class="skill-progress-heading"><h3>JavaScript</h3><strong>70%</strong></div>
+            <div class="skill-progress-track" role="progressbar" aria-label="JavaScript self-assessment" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"><span style="--skill-level: 70%"></span></div>
+          </div>
+          <div class="skill-progress-item">
+            <div class="skill-progress-heading"><h3>C</h3><strong>60%</strong></div>
+            <div class="skill-progress-track" role="progressbar" aria-label="C self-assessment" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"><span style="--skill-level: 60%"></span></div>
+          </div>
+        </div>
+        <p class="skills-note">These percentages are my personal self-assessment and are not official assessments.</p>
+      </div>
+    </section>
+
+    <section class="about-section about-learning" aria-labelledby="learning-title">
+      <div class="container about-learning-layout">
+        <div class="learning-note">
+          <p class="eyebrow">05 / What I'm Learning</p>
+          <h2 id="learning-title">Learning in public, one layer at a time.</h2>
+        </div>
+        <div class="learning-card-grid">
+          <article class="learning-card"><span>01</span><h3>Frontend Development</h3></article>
+          <article class="learning-card"><span>02</span><h3>JavaScript</h3></article>
+          <article class="learning-card"><span>03</span><h3>Web Technologies</h3></article>
+          <article class="learning-card"><span>04</span><h3>C Programming</h3></article>
+          <article class="learning-card"><span>05</span><h3>UI / Visual Design</h3></article>
+          <article class="learning-card"><span>06</span><h3>AI-assisted Development</h3></article>
+          <article class="learning-card"><span>07</span><h3>Software Engineering</h3></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section about-university" aria-labelledby="university-title">
+      <div class="container">
+        <div class="about-section-heading about-heading-row">
+          <div>
+            <p class="eyebrow">06 / University Life</p>
+            <h2 id="university-title">Learning, building, and finding my direction.</h2>
+          </div>
+          <p>Student life at HUST is a balance of coursework, practice, and exploration.</p>
+        </div>
+        <div class="university-copy">
+          <p>I am studying Software Engineering at HUST, working through programming and university coursework, and building practical software projects along the way.</p>
+          <p>In Wuhan, I’m learning new technologies while exploring the direction I may specialize in next.</p>
+        </div>
+        <div class="university-gallery">
+          <figure><img src="assets/life/campus-days.jpg" alt="Campus days" loading="lazy" decoding="async" width="700" height="520"><figcaption>Campus Days</figcaption></figure>
+          <figure><img src="assets/life/Study-moments.jpg" alt="Study moments" loading="lazy" decoding="async" width="700" height="520"><figcaption>Study Moments</figcaption></figure>
+          <figure><img src="assets/life/wuhan-life.jpg" alt="Wuhan life" loading="lazy" decoding="async" width="700" height="520"><figcaption>Wuhan Life</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section about-interests" aria-labelledby="interests-title">
+      <div class="container about-split">
+        <div class="about-section-heading">
+          <p class="eyebrow">07 / Interests</p>
+          <h2 id="interests-title">A few things I enjoy.</h2>
+        </div>
+        <div class="interest-tags" aria-label="Jeren's interests">
+          <span>Frontend</span>
+          <span>JavaScript</span>
+          <span>UI Design</span>
+          <span>AI Tools</span>
+          <span>Fashion</span>
+          <span>Gym</span>
+          <span>Walks with Friends</span>
+          <span>Wuhan</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section about-direction" aria-labelledby="direction-title">
+      <div class="container direction-panel">
+        <p class="eyebrow">08 / Current Direction</p>
+        <h2 id="direction-title">Exploring where software engineering can take me.</h2>
+        <p>I’m currently exploring my future direction within Software Engineering, especially frontend development and the possibility of combining frontend with mobile development. I have not chosen a specialization yet, and I’m learning by building and trying different directions.</p>
+        <a class="text-link" href="projects.html">See the projects space <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span data-year></span> Jeren</p>
+      <p>Wuhan</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Jeren">
+  <meta name="description" content="Jeren | Software Engineering Student | Personal Website">
+  <meta name="theme-color" content="#fffaf7">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Jeren | Software Engineering Student | Personal Website">
+  <meta property="og:description" content="The personal website of Jeren, a Software Engineering student at HUST in Wuhan.">
+  <meta property="og:url" content="index.html">
+  <meta property="og:image" content="assets/profile.jpg">
+  <meta property="og:site_name" content="Jeren's Personal Website">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Jeren | Software Engineering Student | Personal Website</title>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Jeren",
+      "description": "Software Engineering student at Huazhong University of Science and Technology in Wuhan.",
+      "affiliation": {
+        "@type": "CollegeOrUniversity",
+        "name": "Huazhong University of Science and Technology"
+      },
+      "homeLocation": {
+        "@type": "City",
+        "name": "Wuhan"
+      },
+      "knowsAbout": ["Frontend development", "JavaScript", "AI tools", "UI/UX", "Digital products"]
+    }
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <script type="module" src="three-background.js"></script>
+</head>
+<body class="home-page">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="site-brand" href="index.html" aria-label="Jeren home">Jeren<span class="brand-dot">.</span></a>
+      <div class="header-actions">
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">Dark</button>
+        <div class="language-switcher" aria-label="Language"><button type="button" data-language="en" aria-pressed="true">EN</button><button type="button" data-language="zh" aria-pressed="false">中文</button></div>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      </div>
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a class="is-current" href="index.html" aria-current="page">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero-home">
+      <div class="container hero-content">
+        <p class="eyebrow">Personal website</p>
+        <h1>Hi, I’m Jeren.</h1>
+        <p class="hero-lede">A Software Engineering student at Huazhong University of Science and Technology, exploring thoughtful interfaces and useful digital products.</p>
+        <div class="button-row">
+          <a class="button button-primary" href="about.html">More about me <span aria-hidden="true">→</span></a>
+          <a class="button button-quiet" href="projects.html">View projects <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div class="hero-scroll" aria-hidden="true">Scroll to explore <span>↓</span></div>
+    </section>
+
+    <section class="intro-section section-pad">
+      <div class="container split-layout">
+        <div>
+          <p class="eyebrow">A little context</p>
+          <h2>Building with curiosity and care.</h2>
+        </div>
+        <div class="intro-copy">
+          <p>I’m interested in frontend development, JavaScript, AI tools, UI/UX, and the small details that make digital products easier to use.</p>
+          <a class="text-link" href="about.html">Read my story <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-life-section section-pad">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">A glimpse into my world</p>
+            <h2>MY EVERYDAY LIFE</h2>
+          </div>
+          <p>Small scenes from campus, study sessions, city walks, and the moments in between.</p>
+        </div>
+
+        <div class="home-life-grid" data-life-gallery>
+          <article class="life-card">
+            <div class="life-image-wrap">
+              <img class="life-image" src="assets/life/campus-days.jpg" alt="Campus days" loading="lazy" decoding="async" width="700" height="520" data-gallery-image>
+              <div class="life-placeholder" aria-hidden="true">Add your photo here</div>
+              <div class="life-overlay" aria-hidden="true"></div>
+              <p class="life-caption">Campus Days</p>
+            </div>
+          </article>
+          <article class="life-card">
+            <div class="life-image-wrap">
+              <img class="life-image" src="assets/life/Study-moments.jpg" alt="Study moments" loading="lazy" decoding="async" width="700" height="520" data-gallery-image>
+              <div class="life-placeholder" aria-hidden="true">Add your photo here</div>
+              <div class="life-overlay" aria-hidden="true"></div>
+              <p class="life-caption">Study Moments</p>
+            </div>
+          </article>
+          <article class="life-card">
+            <div class="life-image-wrap">
+              <img class="life-image" src="assets/life/wuhan-life.jpg" alt="Wuhan life" loading="lazy" decoding="async" width="700" height="520" data-gallery-image>
+              <div class="life-placeholder" aria-hidden="true">Add your photo here</div>
+              <div class="life-overlay" aria-hidden="true"></div>
+              <p class="life-caption">Wuhan Life</p>
+            </div>
+          </article>
+          <article class="life-card">
+            <div class="life-image-wrap">
+              <img class="life-image" src="assets/life/gym-days.jpg" alt="Gym days" loading="lazy" decoding="async" width="700" height="520" data-gallery-image>
+              <div class="life-placeholder" aria-hidden="true">Add your photo here</div>
+              <div class="life-overlay" aria-hidden="true"></div>
+              <p class="life-caption">Gym Days</p>
+            </div>
+          </article>
+          <article class="life-card">
+            <div class="life-image-wrap">
+              <img class="life-image" src="assets/life/friends.jpg" alt="Time with friends" loading="lazy" decoding="async" width="700" height="520" data-gallery-image>
+              <div class="life-placeholder" aria-hidden="true">Add your photo here</div>
+              <div class="life-overlay" aria-hidden="true"></div>
+              <p class="life-caption">Friends</p>
+            </div>
+          </article>
+          <article class="life-card">
+            <div class="life-image-wrap">
+              <img class="life-image" src="assets/life/little-memories.jpg" alt="Little memories" loading="lazy" decoding="async" width="700" height="520" data-gallery-image>
+              <div class="life-placeholder" aria-hidden="true">Add your photo here</div>
+              <div class="life-overlay" aria-hidden="true"></div>
+              <p class="life-caption">Little Memories</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span data-year></span> Jeren</p>
+      <p>Wuhan, China</p>
+    </div>
+  </footer>
+</body>
+</html>
